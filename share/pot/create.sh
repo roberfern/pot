@@ -225,7 +225,7 @@ _cj_conf()
 		# add remote syslogd capability, if not inherit
 		if [ "$_ip" != "inherit" ]; then
 			# Creating the needed folders on need.
-			mkdir -p /usr/local/syslog.d /usr/local/newsyslog.conf.d /var/log/pot
+			mkdir -p /usr/local/etc/syslog.d /usr/local/etc/newsyslog.conf.d /var/log/pot
 
 			# configure syslog in the pot
 			${SED} -i '' 's%^[^#].*/var/log.*$%# &%g' "${_jdir}/custom/etc/syslog.conf"
